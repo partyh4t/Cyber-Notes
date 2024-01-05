@@ -1,3 +1,6 @@
+# Secnotes
+
+
 ## Scans
 
 ![[Untitled 60.png]]
