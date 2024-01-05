@@ -1,17 +1,22 @@
-![[Pasted image 20231012143115.png]]
+![image](https://github.com/partyh4t/Write-ups/assets/114421293/900fd3f7-bc43-414b-a7d1-1aa87ec1381f)
+
 
 Heading to the webpage, we're met with Drupal
-![[Pasted image 20231012143144.png]]
+![image](https://github.com/partyh4t/Write-ups/assets/114421293/df3dfa47-769b-401c-9c4e-9651018415bd)
+
 
 With some testing, and checking the robots.txt, we notice:
-![image](https://github.com/partyh4t/Write-ups/assets/114421293/65f6029b-366a-430b-b053-3651b638392f)
+![image](https://github.com/partyh4t/Write-ups/assets/114421293/22d60b3d-fb7e-4e66-bee5-a207dfdc103f)
+
 
 
 As we can see, we now know the exact version number of the CMS being used.
-![[Pasted image 20231012143342.png]]
+![image](https://github.com/partyh4t/Write-ups/assets/114421293/cbecd508-9201-4196-9d28-40c0b13ae57f)
+
 
 With some research "Drupal 7.54 exploit" we instantly are met with:
-![[Pasted image 20231012144251.png]]
+![image](https://github.com/partyh4t/Write-ups/assets/114421293/40c9887d-fbc0-418f-8cd6-7f422b59ff2f)
+
 
 We used the exploit, but we had to alter some of the code:
 Originally i only changed the url to the proper IP, and as we can see, the endpoint_path is set to /rest-endpoint, but the exploit doesn't work.
