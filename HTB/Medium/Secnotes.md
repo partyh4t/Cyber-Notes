@@ -3,7 +3,8 @@
 
 ## Scans
 
-![[Untitled 60.png]]
+![Untitled 60.png](./screenshots/Untitled 60.png)
+
 ![[Untitled 61.png]]
 
 
