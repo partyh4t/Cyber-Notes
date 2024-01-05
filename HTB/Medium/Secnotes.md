@@ -1,7 +1,7 @@
 # Secnotes
 ![Secnotes](../../Screenshots/2024-01-05-170434_hyprshot.png)
 
-### Machine Overview:
+## 0) Machine Overview:
 
 - This Box runs a PHP application within an IIS webserver.
 - There is a SQLi vulnerability that allows us to create a user with a malicious name, and dump the SQL database which ends up containing credentials for user `tyler`
