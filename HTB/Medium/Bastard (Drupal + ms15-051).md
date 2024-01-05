@@ -4,7 +4,8 @@ Heading to the webpage, we're met with Drupal
 ![[Pasted image 20231012143144.png]]
 
 With some testing, and checking the robots.txt, we notice:
-![[Pasted image 20231012143323.png]]
+![image](https://github.com/partyh4t/Write-ups/assets/114421293/65f6029b-366a-430b-b053-3651b638392f)
+
 
 As we can see, we now know the exact version number of the CMS being used.
 ![[Pasted image 20231012143342.png]]
