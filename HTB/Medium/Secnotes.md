@@ -1,5 +1,5 @@
 # Secnotes
-
+![Secnotes](../../Screenshots/2024-01-05-170434_hyprshot.png)
 
 ## Scans
 
