@@ -19,34 +19,41 @@ With some research "Drupal 7.54 exploit" we instantly are met with:
 
 We used the exploit, but we had to alter some of the code:
 Originally i only changed the url to the proper IP, and as we can see, the endpoint_path is set to /rest-endpoint, but the exploit doesn't work.
-![[Pasted image 20231012144350.png]]
+![image](https://github.com/partyh4t/Write-ups/assets/114421293/acb9b252-ca1b-40f5-9e2c-87d60107bcc0)
+
 
 So if we try to access that endpoint ourselves, it turns out it doesnt exist for us.
-![[Pasted image 20231012144445.png]]
+![image](https://github.com/partyh4t/Write-ups/assets/114421293/735785d0-003e-4a3d-8f1c-9c81b50a0bbc)
+
 
 What if we try just /rest? Because if we search up that error with drupal, we can see some stackoverflow questions, that show that /rest is also a possible endpoint.
 
 With that fixed:
-![[Pasted image 20231012144645.png]]
+![image](https://github.com/partyh4t/Write-ups/assets/114421293/39aa305d-3e55-44c1-9176-a1fbad85525b)
+
 
 Now, the exploit is creating a .php file within the server, and the exploit code is retrieving credentials:
-![[Pasted image 20231012144927.png]]
+![image](https://github.com/partyh4t/Write-ups/assets/114421293/0103ff84-1d65-4b26-aa10-de9d330cb625)
+
 
 Also the session information:
-![[Pasted image 20231012144951.png]]
+![image](https://github.com/partyh4t/Write-ups/assets/114421293/38e59117-7a55-4f2c-bdb2-fbd88c95cf6a)
+
 
 So we can either log into the admin dashboard and investigate, or we can also change the data to maybe give us a shell of some sort, it'd have to be in php though.
 
 Lets first try to add some of those cookies into our browser:
-![[Pasted image 20231012151148.png]]
+![image](https://github.com/partyh4t/Write-ups/assets/114421293/6ea28526-0a5b-4f0a-bfcf-23d67958be05)
+
 
 Here, we put the session names value into the name section, and the id into the value:
-![[Pasted image 20231012151217.png]]
+![image](https://github.com/partyh4t/Write-ups/assets/114421293/a2f6a602-467e-4020-b6ad-035a5220eb99)
+
 
 I was having trouble trying to get a rev shell with the exploit code, so we'll have to do it through Drupal.
 
 Going to be following this:
-https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/drupal#rce
+[https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/drupal#rce](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/drupal#rce)
 
 For this, it will only work for versions of Drupal before V8.
 
