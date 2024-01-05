@@ -16,7 +16,7 @@
 
 ## 1) Scans
 
-![Untitled 60.png | 250](../../Screenshots/Untitled_60.png)
+![Untitled 60.png](../../Screenshots/Untitled_60.png)
 
 ![Untitled 61.png](../../Screenshots/Untitled_61.png)
 
