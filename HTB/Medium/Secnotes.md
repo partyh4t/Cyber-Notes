@@ -1,7 +1,9 @@
 # Secnotes
 ![Secnotes](../../Screenshots/2024-01-05-170434_hyprshot.png)
 
-## Scans
+
+
+## 1- Scans
 
 ![Untitled 60.png](../../Screenshots/Untitled_60.png)
 
@@ -9,7 +11,7 @@
 
 
 
-## Walkthrough
+## 2- Walkthrough
 
 A run down: Through the nmap scan, we can see we have smb, and 2 web servers open. One on 80, and one on 8808.
 
