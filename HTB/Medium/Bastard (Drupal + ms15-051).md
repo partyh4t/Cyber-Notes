@@ -9,7 +9,6 @@ With some testing, and checking the robots.txt, we notice:
 ![image](https://github.com/partyh4t/Write-ups/assets/114421293/22d60b3d-fb7e-4e66-bee5-a207dfdc103f)
 
 
-
 As we can see, we now know the exact version number of the CMS being used.
 ![image](https://github.com/partyh4t/Write-ups/assets/114421293/cbecd508-9201-4196-9d28-40c0b13ae57f)
 
