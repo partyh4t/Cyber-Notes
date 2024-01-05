@@ -5,7 +5,7 @@ Machine Overview:
 - This Box runs a PHP application within an IIS webserver.
 - There is a SQLi vulnerability that allows us to create a user with a malicious name, and dump the SQL database which ends up containing credentials for user `tyler`
 - With those creds, we are able to read/write files into an SMB share, which seems to be connected to the IIS webserver, allowing us to upload `nc64.exe` and a PHP script to execute it.
-- After enumerating the machine, we come to notice that it's running WSL. (Windows Subsystem for Linux)
+- After enumerating the machine, we come to notice that it's running WSL. _(Windows Subsystem for Linux)_
 - There is a bash.exe file within the filesystem, allowing us to run it and eventually cat out `.bash_history`, containing credentials belonging to `Administrator`.
 
 ## 1) Scans
