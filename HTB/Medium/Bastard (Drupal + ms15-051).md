@@ -1,4 +1,6 @@
 # Bastard
+![image](https://github.com/partyh4t/Write-ups/assets/114421293/3061d92f-1f6d-4189-a9e4-e510b14e004c)
+
 
 ## 0) Machine Overview
 - We're first met with a web application running Drupal that leaks a useful directory through the robots.txt file.
