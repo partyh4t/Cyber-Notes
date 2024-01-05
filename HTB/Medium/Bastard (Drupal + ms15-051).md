@@ -59,12 +59,12 @@ Here, we put the session names value into the name section, and the id into the 
 ![image](https://github.com/partyh4t/Write-ups/assets/114421293/a2f6a602-467e-4020-b6ad-035a5220eb99)
 
 
-I was having trouble trying to get a rev shell with the exploit code, so we'll have to do it through Drupal.
+I was having trouble trying to get a rev shell with the exploit code, so we'll have to do it manually.
 
 Going to be following this:
 [https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/drupal#rce](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/drupal#rce)
 
-For this, it will only work for versions of Drupal before V8.
+Note: this will only work for versions of Drupal before V8.
 
 So, after a lot of research, and some PHP errors, I was able to use this code on the new page within the "Add-content" section:
 ```
