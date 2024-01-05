@@ -2,6 +2,7 @@
 ![Secnotes](../../Screenshots/2024-01-05-170434_hyprshot.png)
 
 ### Machine Overview:
+
 - This Box runs a PHP application within an IIS webserver.
 - There is a SQLi vulnerability that allows us to create a user with a malicious name, and dump the SQL database which ends up containing credentials for user `tyler`
 - With those creds, we are able to read/write files into an SMB share, which seems to be connected to the IIS webserver, allowing us to upload `nc64.exe` and a PHP script to execute it.
