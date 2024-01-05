@@ -9,6 +9,9 @@
 - After enumerating the machine, we come to notice that it's running WSL. _(Windows Subsystem for Linux)_
 - There is a bash.exe file within the filesystem, allowing us to run it and eventually cat out `.bash_history`, containing credentials belonging to `Administrator`.
 
+[Scans](#Scans)
+[Walkthrough](#Walkthrough)
+
 
 
 ## 1) Scans
