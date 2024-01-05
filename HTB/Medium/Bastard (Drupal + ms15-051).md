@@ -17,7 +17,7 @@ Heading to the webpage, we're met with Drupal
 
 
 With some testing, and checking the robots.txt, we notice:
-![image](https://github.com/partyh4t/Write-ups/assets/114421293/22d60b3d-fb7e-4e66-bee5-a207dfdc103f)
+![image | 600](https://github.com/partyh4t/Write-ups/assets/114421293/22d60b3d-fb7e-4e66-bee5-a207dfdc103f)
 
 
 As we can see, we now know the exact version number of the CMS being used.
