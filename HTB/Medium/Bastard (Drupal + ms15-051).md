@@ -8,6 +8,11 @@
 - We're then able to leverage that version number to exploit a CVE to gain credentials and eventually RCE.
 - Finally, once the machine was compromised, we exploited ms15_051 to gain Administrative Privileges.
 
+1. [Scans](#1-scans)
+2. [Web Enumeration](#2-web-enumeration)
+3. [Exploitation](#3-exploitation)
+4. [Privilege Escalation](#4-privilege-escalation)
+
 ## 1) Scans
 ![image](https://github.com/partyh4t/Write-ups/assets/114421293/900fd3f7-bc43-414b-a7d1-1aa87ec1381f)
 
