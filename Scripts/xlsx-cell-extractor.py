@@ -1,6 +1,6 @@
-# If we ever have a worksheet, and we want to extract all cells and print them to our terminal/save them to a file:
-
 #!/usr/bin/python3
+
+# If we ever have a worksheet, and we want to extract all cells and print them to our terminal/save them to a file:
 
 import openpyxl
 
