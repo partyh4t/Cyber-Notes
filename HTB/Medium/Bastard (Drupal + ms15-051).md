@@ -69,7 +69,6 @@ I was having trouble trying to get a rev shell with the exploit code, so we'll h
 
 Going to be following this:
 [https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/drupal#rce](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/drupal#rce)
-
 Note: this will only work for versions of Drupal before V8.
 
 So, after a lot of research, and some PHP errors, I was able to use this code on the new page within the "Add-content" section:
