@@ -3,10 +3,10 @@
 
 
 ## 0) Machine Overview
-- We're first met with a web application running Drupal that leaks a useful directory through the robots.txt file.
+- We're first met with a web application running `Drupal` that leaks a useful directory through the `robots.txt` file.
 - The file contains a version# for the current Drupal installation that is running on the web server.
 - We're then able to leverage that version number to exploit a CVE to gain credentials and eventually RCE.
-- Finally, once the machine was compromised, we exploited ms15_051 to gain Administrative Privileges.
+- Finally, once the machine was compromised, we exploited `ms15_051` to gain Administrative Privileges.
 
 1. [Scans](#1-scans)
 2. [Web Enumeration](#2-web-enumeration)
