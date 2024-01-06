@@ -30,7 +30,7 @@ With some research "Drupal 7.54 exploit" we instantly are met with:
 
 
 We used the exploit, but we had to alter some of the code:
-Originally i only changed the url to the proper IP, and as we can see, the endpoint_path is set to /rest-endpoint, but the exploit doesn't work.
+Originally I only changed the url to the proper IP, and as we can see, the endpoint_path is set to /rest-endpoint, but the exploit doesn't work.
 ![image](https://github.com/partyh4t/Write-ups/assets/114421293/acb9b252-ca1b-40f5-9e2c-87d60107bcc0)
 
 
@@ -39,9 +39,10 @@ So if we try to access that endpoint ourselves, it turns out it doesnt exist for
 ![image](https://github.com/partyh4t/Write-ups/assets/114421293/735785d0-003e-4a3d-8f1c-9c81b50a0bbc)
 
 
-What if we try just /rest? Because if we search up that error with drupal, we can see some stackoverflow questions, that show that /rest is also a possible endpoint.
+What if we try just /rest? Because if we search up that error with drupal, we can see some stackoverflow questions that show that /rest is also a possible endpoint.
 
 With that fixed:
+
 ![image](https://github.com/partyh4t/Write-ups/assets/114421293/39aa305d-3e55-44c1-9176-a1fbad85525b)
 
 
