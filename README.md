@@ -8,4 +8,4 @@ Here, you'll be able to find various resources ranging from:
 - useful scripts I've gathered throughout the years, mainly for very specific use cases.
 
 ### Note
-Lastly, I want to note that I am by no means anywhere near as qualified as many other people in this field, so take this all with a grain of salt. This is just my perspective as someone who's never really had any real experience in the IT/Cybersec field. Feel free to drop some wisdom or correct me if anything is inaccurately explained.
+Lastly, I want to note that I am by _no_ means anywhere near as qualified as many other people in this field, so take this all with a grain of salt. This is just my perspective as someone who's never really had any real experience in the IT/Cybersec field. Feel free to drop some wisdom or correct me if anything is inaccurately explained.
