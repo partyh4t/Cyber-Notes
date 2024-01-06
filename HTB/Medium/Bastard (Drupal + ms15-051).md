@@ -35,6 +35,7 @@ Originally i only changed the url to the proper IP, and as we can see, the endpo
 
 
 So if we try to access that endpoint ourselves, it turns out it doesnt exist for us.
+
 ![image](https://github.com/partyh4t/Write-ups/assets/114421293/735785d0-003e-4a3d-8f1c-9c81b50a0bbc)
 
 
