@@ -16,7 +16,8 @@ Heading to the webpage, we're met with Drupal
 ![image](https://github.com/partyh4t/Write-ups/assets/114421293/df3dfa47-769b-401c-9c4e-9651018415bd)
 
 
-With some testing, and checking the robots.txt, we notice: \n
+With some testing, and checking the robots.txt, we notice:
+
 ![image](https://github.com/partyh4t/Write-ups/assets/114421293/22d60b3d-fb7e-4e66-bee5-a207dfdc103f)
 
 
