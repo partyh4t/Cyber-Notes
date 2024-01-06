@@ -51,6 +51,7 @@ Now, the exploit is creating a .php file within the server, and the exploit code
 
 
 Also the session information:
+
 ![image](https://github.com/partyh4t/Write-ups/assets/114421293/38e59117-7a55-4f2c-bdb2-fbd88c95cf6a)
 
 
