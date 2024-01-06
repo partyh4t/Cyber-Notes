@@ -45,3 +45,4 @@ A run down: Through the nmap scan, we can see we have smb, and 2 web servers ope
 
 - Then, i simply connected to the SMB share, which had a C$ drive share, and went and got the flag. (Note: We could also use some impacket scripts with the credentials, like psexec, smbexec, wmiexec)
 
+Pwned.
