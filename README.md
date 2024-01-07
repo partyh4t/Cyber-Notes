@@ -1,4 +1,4 @@
-# What This Is
+# Why I Made This
 
 I've decided to start transferring certain notes of mine into this repository in hopes that it may help anyone who comes across it. I'm also slightly refining them as I feel the need to improve my note-taking skills and ability to articulate and convey information clearly, _which is a crucial skill when it comes to Pen-testing and Vulnerability Assessments._
 
