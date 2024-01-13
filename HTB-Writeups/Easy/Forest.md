@@ -58,6 +58,7 @@ WinRM's is open, we can try evil-winrm:
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/cf34fe7c-e148-4019-b7fd-69235928e8ef)
 
 How about Psexec since SMB is open? 
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/997d6eb6-d93c-4633-9187-efc28b389796)
 
 No luck. In any case, we have a foothold. Let's begin with some enumeration via BloodHound. 
