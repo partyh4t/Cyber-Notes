@@ -20,7 +20,7 @@ Seems like we're going to be interacting with Active Directory. After some enume
 ## 2) LDAP Enumeration
 We first use ldapsearch: (Here I specified CN=users to gather some user information, which with this command it didn't prove too useful. However, the command in and of itself proves that anonymous bind works. Check [HackTricks](https://book.hacktricks.xyz/network-services-pentesting/pentesting-ldap#windapsearch) for more on syntax and tool usage)
 
-(Turns out ldapsearch does work, but the reason certain users didnt show up was because the actual users were not in CN=Users, but rather in OU=Employees. Although windapsearch is still better and easier to filter through.)
+(Turns out ldapsearch is useful, but the reason certain users didnt show up was because the actual users were not in CN=Users, but rather in OU=Employees. Although we'll just use windapsearch in this case as its easier to filter through.)
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/30e331fd-8e4a-48bf-94a1-053ad8c549a1)
 
 We can see some actual users:
