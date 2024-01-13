@@ -37,6 +37,7 @@ response = requests.post(f'http://{host}/upload.php',
                           )
 
 #sending request, and using regex to find specified content in response, then writing to stdout
+#also, if response/path format is different, just alter to filter for proper path.
 (url, ) = re.findall(r'path:</p><a href="(.*)">\1</a>', response.text)
 response = requests.get(f'http://{host}/{url}')
 sys.stdout.buffer.write(response.content)
