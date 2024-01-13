@@ -70,6 +70,7 @@ For this, I uploaded SharpHound.ps1 via WinRM, but i couldn't get it to work pro
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/cd4f70d1-9c76-4757-a1d1-8cdcdbb63b68)
 
 Now we should input that into bloodhound. With some reseach we can find some documentation on the privilege that svc-alfresco has.
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/782628fe-86db-41a8-93c3-887ee876ab07)
 
 We basically just need to create a user, add him to the "Exchange Windows Permissions", which then he can give himself DCSync Rights/privileges that will allow us to then use that user to perform a DCSync attack.
@@ -83,6 +84,7 @@ Now, he just needs to give himself DC-Sync rights, which we can do with powervie
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/571e1675-2ddc-4f76-ac4b-13e2bb74e337)
 
 First, since it seems some kind of AV is not letting us run scripts from the disk, we'll need to import it to memory and run it:
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/1adc2335-cdd0-4c24-824d-25750c1c0374)
 
 Now that it is running in memory, we need to now give our user "bob" DCSync privileges:
