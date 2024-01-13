@@ -46,6 +46,7 @@ python GetNPUsers.py jurassic.park/triceratops:Sh4rpH0rns -request -format hashc
 ```
 
 In our case, since we know anonymous-bind is enabled, we can provide no credentials and still have the tool retrieve the users for us: (Don't need '':'')
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/c440b8ef-b48c-4b56-9e0f-c15d6f9f3508)
 
 That means now we can try and crack svc-alfrescos password offline.
