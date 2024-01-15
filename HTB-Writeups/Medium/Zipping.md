@@ -72,9 +72,9 @@ We'll first use this payload just to make sure that our SQLi works: _(Note: the 
 
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/cae9bc82-aaaa-4940-861c-2129497bb4dd)
 
-Now this payload is a little confusing in the sense that, if we look back at the code, it says its filtering from basically all special characters using `pgrep_match()`.
+Now this payload looks a little confusing at first, but if we look back at the code, it says its filtering from basically all special characters using `pgrep_match()`.
 
-If we check out this [HackTricks](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/php-tricks-esp#preg_match) article, it shows there's a way to bypass it by using `%0a` to basically send the rest of the payload after that character, on a new line. We have to make sure we end with a number, due to the regex that's being used.
+So if we check out this [HackTricks](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/php-tricks-esp#preg_match) article, it shows there's a way to bypass it by using `%0a` to basically send the rest of the payload after that character, on a new line. We have to make sure we end with a number, due to the regex that's being used.
 
 From that point, its just testing certain payloads until we get a 302 response.
 
