@@ -172,9 +172,11 @@ int main(void){
 ```
 
 Then compile it:
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/546ec34b-5f49-4cb6-adbb-840ff59d2792)
 
 Then finally execute the binary with `sudo`.
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/ab69db90-5291-4da7-ae38-acd25aa1013e)
 
 Pwned. 
