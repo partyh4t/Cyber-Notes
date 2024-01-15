@@ -98,14 +98,16 @@ If all goes well, we should receive a request to our python web-server, and then
 
 From there, we can just `ssh-keygen -t rsa -b 4096`, and then login via SSH.
 
-## 3)
+## 3) Privilege Escalation
 
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/802a758e-3412-4c96-9ed7-58d4565b5883)
 
 If we run this binary, it just asks us for a password, without much in return. I tried putting a bunch of A's in the chances it could be overflowed, but it wasn't. Also, since the binary is owned by root, we can't even take it offline to analyze it, so we'll have to use whats available to us.
 
 `objdump -x stock`
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/71942d5d-ca5f-4d89-af7b-ce867c563d01)
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/76be9b22-4d28-4318-9e9b-7b76c301eca6)
 
 `ldd stock`
