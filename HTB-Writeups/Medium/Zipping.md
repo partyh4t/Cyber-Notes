@@ -39,9 +39,11 @@ I tried the following:
 - Uploading a .zip file containing a .php file.
 
 But those didn't work. However, that's when things started to get interesting. I tried uploading a .zip file containing a .php.pdf file, which it suprisingly accepted. It returns us with an endpoint we can use to access it:
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/712f7e85-6971-4324-8aa5-49dcc871d025)
 
 Now if we access it, we get an error:
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/66a310bb-cc76-4cea-aa0a-c44dba1f7de1)
 
 Now this exploit isn't exactly that, but its similar.
