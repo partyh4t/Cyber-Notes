@@ -111,18 +111,23 @@ If we run this binary, it just asks us for a password, without much in return. I
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/76be9b22-4d28-4318-9e9b-7b76c301eca6)
 
 `ldd stock`
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/4214adef-fac0-4b02-92dc-e5f656680685)
 
 `hexdump -C stock`
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/349fbf98-88c1-4081-a048-355ab0da5b42)
 
 Turns out that ASCII on the right, `St0ckM4nager`, was actually the password to the binary:
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/f98ad92a-193d-4d3c-b560-14a4fcd9cc37)
 
 `strings` gives us a better understanding though:
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/a7e1ca9c-b832-44bd-b9de-d8fa043d8de4)
 
 Now that we have the password, when we run `strace /usr/bin/stock`, and provide the password, it gives us some more output:
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/2d155f11-674d-4f11-86f4-ecdf0ccd4e11)
 
 If we pay close attention, we can see its trying to load a `libcounter.so` file from our users home directory, but that file doesn't exist.
