@@ -4,8 +4,14 @@
 
 ## 0) Machine Overview
 
+- First, we encounter a web server hosting a file upload, that filters for `.zip` archives that must contain a `.pdf`
+- We can leverage symlinks to basically perform LFI, and read the web applications source code.
+- We notice a certain parameter is vulnerable to SQLi, and exploit it to gain RCE.
+- Privilege escalation involves analyzing a binary locally, which loads a lib file that doesn't exist, allowing us to create our own and escalate.
 
-
+1. [Scans](#1-scans)
+2. [Web Enumeration](#2-web-enumeration)
+3. [Privilege Escalation](#3-privilege-escalation)
 
 ## 1) Scans
 
