@@ -46,23 +46,28 @@ Now if we access it, we get an error:
 
 Now this exploit isn't exactly that, but its similar.
 Basically, we can set a symbolic link to a file like `/etc/passwd` and then once our `.pdf` is retrieved/accessed, it will actually retrieve `/etc/passwd`.
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/d2ab29ac-e60b-4579-914f-57e344074f86)
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/522e6823-9b47-44f9-b6b4-cd666feef063)
 
 
 Then once we upload our file and access it:
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/f4aeb144-1fb7-4e61-87ad-53492133fb6f)
 
 
 I tried checking if there was an `id_rsa` anywhere, but unfortunately there wasn't.
 
 In the meanwhile,  we can basically read/download all the source code of the website. In specific, there is an interesting file called `cart.php`:
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/6e151ff8-5fbe-4ce9-93c6-f417260d1847)
 
 
 Its basically telling us its vulnerable to SQLi through those pretty funny comments.
 
 We'll first use this payload just to make sure that our SQLi works: _(Note: the 1 at the end is needed, i'm assuming because once the SQL statement ends with our semicolon, the query is still expecting a number at the end based on the actual functionality of the pgrep_match function that was implemented.)_
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/cae9bc82-aaaa-4940-861c-2129497bb4dd)
 
 Now this payload is a little confusing in the sense that, if we look back at the code, it says its filtering from basically all special characters using `pgrep_match()`.
@@ -72,17 +77,21 @@ If we check out this [HackTricks](https://book.hacktricks.xyz/network-services-p
 From that point, its just testing certain payloads until we get a 302 response.
 
 The reason we have to make it so complicated and have it write out to file is because its an `Out-Of-Band` SQLi. We cant see the results directly listed to us, so we need a way to store it and retrieve it. So for example, in this `PayloadsAllTheThings` note, we can see that it recommends we use that exact payload:
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/42615c46-cb88-40fe-a778-eb6edec1e717)
 
 The only thing that we need to worry about is where we actually want to store the file, and optimally we'd want to be able to retrieve it/access it. So you could try placing it somewhere in the web-root, but if privileges aren't sufficient for that, we can try placing it somewhere like `/var/lib/mysql/`.
 
 Now then, lets see if we can try writing a web-shell payload into a file, then accessing it on the web-server: _(Just keep in mind, stuff like this requires lots of tampering, especially when it comes to special characters.)_
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/55f7a6d5-3b60-4ab0-a7cf-f6d1ff200de9)
 
 Assuming we got the status code response we wanted, we can try executing it now: _(Another note, for some reason we have to remove the file extension, or else it doesn't work.)_
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/ff22dc5e-295e-40c0-b310-24fd72f041d6)
 
 If all goes well, we should receive a request to our python web-server, and then a reverse shell right after.
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/cf2a96a0-c6c3-49ce-85f8-6a137481c86f)
 
 From there, we can just `ssh-keygen -t rsa -b 4096`, and then login via SSH.
