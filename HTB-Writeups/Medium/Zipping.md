@@ -188,9 +188,11 @@ In the context of the SQLi, the way you were meant to know that you can write fi
 Also, you could also have performed a UNION SQLi as well, its not an OOB SQLi like I thought it was, albeit there wasn't much to retrieve from the DB.
 
 Another great tip is, when we want to directly include a reverse shell to get executed, and want to know for sure that the payload is working without being screwed up by URL encoding. we can make sure there are no `+` or `=`, we can do that by adding extra spaces in between the characters like IppSec does here: _(and don't forget to try running it against yourself first as well)_
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/66f569d7-13a7-4295-a7b4-3f18682ff285)
 
 To test it on ourselves:
+
 ![image](https://github.com/partyh4t/Cyber-Notes/assets/114421293/2241fdf0-ce13-4586-8d37-714f465a592f)
 
 `msfvenom` could have saved me the hassle of trying to get a properly working `libcounter.so` reverse shell, since I had to find out about`__attribute__((constructor))`
